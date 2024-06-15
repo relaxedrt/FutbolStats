@@ -11,7 +11,7 @@ def getRanking():
     with open("./Datos/ranking.json", "w") as file:
 
         #Entramos en un bucle de todos los archivos
-        for i in range(1,5):
+        for i in range(1,503):
             print(i)
             #Asignamos a la url el valor de i
             url = f"https://www.bdfutbol.com/es/e/e{i}.html?p=stats"
