@@ -33,7 +33,6 @@ def getRanking():
         json.dump(fecha, file, indent=4)
     return
         
-
 if __name__ == "__main__":
     init = datetime.now()
     getRanking()
