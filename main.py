@@ -33,4 +33,4 @@ if __name__ == '__main__':
 
         # print("here " + str(ayer)) # Comprobacion De Que Se Actualiza
         # Esperamos x Tiempo Y Volvemos A Comprobar 
-        time.sleep(10)    
+        time.sleep(TimeDeath)    
