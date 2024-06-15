@@ -6,8 +6,9 @@ def getRanking():
 
     #Definimos la lista
     ranking = {}
-
-    with open("ranking.json", "w") as file:
+    
+    # Abrimos El Ranking Que Esta En Un Carpeta LLamada Datos
+    with open("./Datos/ranking.json", "w") as file:
 
         #Entramos en un bucle de todos los archivos
         for i in range(1,503):
