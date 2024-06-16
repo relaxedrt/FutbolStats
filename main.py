@@ -1,6 +1,9 @@
 import datetime
 import time
 
+#Importarmos El Scrip Que Vamos A Utilizar
+from futbol_api.createjson import getRanking
+
 file_path = "DayFile.txt" # Establecemos El Nombre Del Archivo Donde Se Guarda El Dia De Ayer
 TimeDeath = 60 * 30 # Establecemos El Tiempo Que Va A Tardar Eb Volver A Ejecutarse
 
@@ -30,6 +33,8 @@ if __name__ == '__main__':
             set_Yesterday()
             # Cambiamos El Dia De Ayer En La Variable
             ayer = [datetime.datetime.now().year,datetime.datetime.now().month,datetime.datetime.now().day]
+            #Ejecutamos El Script De Crear El JSON
+            getRanking()
 
         # print("here " + str(ayer)) # Comprobacion De Que Se Actualiza
         # Esperamos x Tiempo Y Volvemos A Comprobar 

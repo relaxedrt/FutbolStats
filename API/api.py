@@ -12,7 +12,7 @@ async def root():
     # Abrimos El Archivo JSON En Modo Lectura
     with open(filepath, "r") as dataFile:
         # Leemos El Contenido Del Archivo Y Lo Cargamos Como Un Objeto JSON En La Variable data
-        data = json.loads(dataFile.read())
+        data = json.load(dataFile)
         
         # Convertimos El Objeto JSON De Vuelta A Una Cadena Con Formato JSON Y Lo Identamos Para Mejorar Su legibilidad
         pretty_json = json.dumps(data, indent=4)
